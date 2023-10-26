@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Task Bootstrap</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-1 col-md-1"></div>
+            <div class="col-xs-10 col-md-10">
+                <div class="custom-box">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4">
+                                <label for="fname">First Name:</label>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                                <input type="text" class="form-control" id="fname" placeholder="First Name"
+                                    name="firstname" maxlength="30" pattern="[A-Za-z]+">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4">
+                                <label for="lname">Last Name:</label>
+                            </div>
+                            <div class="col-md-4 col-lg-4">
+                                <input type="text" class="form-control" id="lname" placeholder="Last Name"
+                                    name="lastname" maxlength="30" pattern="[A-Za-z]+">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4">
+                                <label for="DOB">Date of Birth:</label>
+                            </div>
+                            <div class="dob">
+                                <div class="col-xs-12 col-md-8 col-lg-8">
+                                    <input type="date" class="form-control" id="dob">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-md-4 col-lg-4">
+                                <label for="email">Email:</label>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                                <input type="text" class="form-control" id="email" placeholder="Email id" name="email">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4">
+                                <label for="gender">Gender:</label>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="male" name="gender" value="male"
+                                        checked>
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="female" name="gender"
+                                        value="female">
+                                    <label class="form-check-label" for="female">Female</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-xs-12 col-md-4 col-lg-4">
+                                <label for="address">Address:</label>
+                            </div>
+                            <div class="col-xs-12 col-md-8 col-lg-8">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4">
+                                <label for="Pin Code">Pin Code:</label>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                                <input type="text" class="form-control" id="pin" placeholder="Pin Code" name="Pin Code">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4">
+                                <label for="State">State:</label>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                                <input type="text" class="form-control" id="state" placeholder="State" name="State">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4">
+                                <label for="City">City:</label>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                                <input type="text" class="form-control" id="city" placeholder="City" name="city">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4">
+                                <label for="Country">Country:</label>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                                <input type="text" class="form-control" id="country" placeholder="Country"
+                                    name="Country">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4">
+                                <label for="hobbies">Hobbies:</label>
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" class="form-check-input" id="drawing" name="hobbies[]"
+                                        value="drawing">
+                                    <label class="form-check-label" for="drawing">Drawing</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" class="form-check-input" id="singing" name="hobbies[]"
+                                        value="singing">
+                                    <label class="form-check-label" for="singing">Singing</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" class="form-check-input" id="sketching" name="hobbies[]"
+                                        value="sketching">
+                                    <label class="form-check-label" for="sketching">Sketching</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="checkbox" class="form-check-input" id="dancing" name="hobbies[]"
+                                        value="dancing">
+                                    <label class="form-check-label" for="dancing">Dancing</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col-xs-12 col-md-4 col-lg-4">
+                                <label for="Qualifications">Qualifications:</label>
+                            </div>
+                            <div class="col-xs-12 col-md-8 col-lg-8">
+                                <div class="table-responsive-xl">
+                                    <table class="table">
+                                        <thead class="bg-warning text-white border-2">
+                                            <tr class="table-bordered">
+                                                <th>S.NO</th>
+                                                <th>Examination</th>
+                                                <th>Board</th>
+                                                <th>Percentage</th>
+                                                <th>Year of Passing</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <input type="text" id="exam1" placeholder="Examination">
+                                                </td>
+                                                <td>
+                                                    <input type="text" id="bord1" placeholder="Board">
+                                                </td>
+                                                <td>
+                                                    <input type="text" id="percentage1" placeholder="Percentage">
+                                                </td>
+                                                <td>
+                                                    <input type="text" id="year1" placeholder="Year Of Passing">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>
+                                                    <input type="text" id="exam2" placeholder="Examination">
+                                                </td>
+                                                <td>
+                                                    <input type="text" id="bord2" placeholder="Board">
+                                                </td>
+                                                <td>
+                                                    <input type="text" id="percentage2" placeholder="Percentage">
+                                                </td>
+                                                <td>
+                                                    <input type="text" id="year2" placeholder="Year Of Passing">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>
+                                                    <input type="text" id="exam3" placeholder="Examination">
+                                                </td>
+                                                <td>
+                                                    <input type="text" id="bord3" placeholder="Board">
+                                                </td>
+                                                <td>
+                                                    <input type="text" id="percentage3" placeholder="Percentage">
+                                                </td>
+                                                <td>
+                                                    <input type="text" id="year3" placeholder="Year Of Passing">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-4 col-lg-4">
+                                <label for="Courses">Courses:</label>
+
+                            </div>
+                            <div class="col-md-8 col-lg-8">
+                                <div class="form-group">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" id="radio1" name="optradio"
+                                            value="option1" checked>
+                                        <label class="form-check-label" for="radio1">BCA</label>
+                                        <div class="form-check form-check-inline"></div>
+                                        <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                                            value="option2">
+                                        <label class="form-check-label" for="radio2">MCA</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><br>
+                        <div class="row">
+                            <div class="row mb-4">
+                                <div class="col-md-8">
+                                    <button class="btn btn-outline-warning">Send Now</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+
+    <div class="col-xs-1 col-md-1"></div>
+    </div>
+    </div>
+
+</body>
+
+</html>
